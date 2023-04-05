@@ -69,6 +69,7 @@ body{
   .text-column h1{
     text-align: center;
     padding: 20px;
+    text-transform: uppercase;
   }
 .galerie ul{
     display: flex;
@@ -107,6 +108,7 @@ img:hover{
 .contact h3{
     padding: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 button{

@@ -122,6 +122,7 @@ button:hover{
     .contact h3{
         padding: 20px;
         text-align: center;
+        text-transform: uppercase;
     }
 
     footer {
