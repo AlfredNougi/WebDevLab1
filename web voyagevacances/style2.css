@@ -3,6 +3,11 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
 .banner{
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/photovoyage.jpg);
@@ -44,20 +49,40 @@
 }
 .navbar ul li:hover::after{
     width: 100%;
+
 }
-.gallerie ul{
+.wrapper {
+    display: flex;
+  }
+  
+  .text-column {
+    flex: 1;
+    margin-right: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .galerie {
+    flex: 4;
+  }
+  
+  .text-column h1{
+    text-align: center;
+    padding: 20px;
+  }
+.galerie ul{
     display: flex;
     flex-wrap: wrap;
     margin: 1vmin;
 }
 
-.gallerie li{
+.galerie li{
     height: 40vh;
-    flex-grow: 1;
+    flex-grow: 100;
     margin: 1vmin;
     list-style: none;
 }
-.gallerie img{
+.galerie img{
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -65,3 +90,62 @@
 img:hover{
     filter:brightness(1.20);
 }
+
+.contact{
+    color: white;
+    width: 400px;
+    height: 280px;
+    background: linear-gradient(to top, rgba(25, 24, 24, 0.5)40%,rgba(255, 255, 255, 0.5)60%);
+    position: absolute;
+    top: 850px;
+    left: 20px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.contact h3{
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative
+}
+span{
+    background:rgb(255, 255, 255, 0.651);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+    bottom: 20px;
+
+  }
